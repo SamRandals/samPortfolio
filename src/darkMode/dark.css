@@ -1,0 +1,90 @@
+
+
+:root{
+
+--bg-color:#4cb589;
+--text-color:#11184b;
+--sec-text-color:#2e0a44;
+--border-color:#3b493d;
+--shadow-color:#457a4c;
+--good-color:#336aa8;
+--bad-color:#b44138;
+--transparent-color:#4cb58998;
+
+/* Gradiants colors */
+--bg-gradiant-color:linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
+}
+.dark {
+  --bg-color: #0d1b2a;       /* azul casi negro, profundidad oceánica */
+  --text-color: #e0f2f1;     /* blanco azulado, legible sobre oscuro */
+  --sec-text-color:#a38ab1;
+  --border-color: #1b263b;   /* azul grisáceo oscuro */
+  --shadow-color: #0a9396;   /* turquesa apagado, como brillo submarino */
+  --good-color:#e0c756;
+  --bad-color:#442130;
+--transparent-color:#0d1b2aa1;
+  /* Gradiente oscuro (modo dark) */
+  --bg-gradiant-color: linear-gradient(
+    90deg,
+    rgba(13, 27, 42, 1) 0%,    /* azul abismo */
+    rgb(30, 84, 85) 50%, /* verde turquesa */
+    rgb(10, 102, 76) 100%  /* verde agua brillante */
+  );
+}
+/* text color utilitys */
+@utility main-text{
+    color: var(--text-color);;
+}
+@utility sec-color{
+    color:var(--sec-text-color);
+}
+
+@utility transparent-color{
+  background:var(--transparent-color);
+}
+
+@utility border-color{
+    border:2px solid var(--border-color);
+}
+@utility shadow-color{
+    box-shadow:0px 0px 20px 0px var(--shadow-color);
+}
+
+@utility hover-button{
+    transform: scale(1.2);
+}
+
+@utility bg-color{
+  background: var(--bg-color);
+}
+
+
+@keyframes shadow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px 0px var(--shadow-color);
+  }
+  50% {
+    box-shadow: 0 0 15px 0px var(--shadow-color);
+  }
+}
+
+@utility animate-shadow-pulse {
+  animation: shadow-pulse 1.5s infinite ease-in-out;
+}
+
+
+@utility good-color{
+  color:var(--good-color);
+}
+@utility bad-color{
+  color: var(--bad-color);
+}
+
+
+.scroll-tags::-webkit-scrollbar{
+  display: none;
+}
+.no-scroll-bar::-webkit-scrollbar{
+display: none ;
+}

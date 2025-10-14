@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "./darkMode/dark.css";
+
+:root{
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow-y: auto;
+
+  background: var(--bg-gradiant-color);
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Pinterest Clone",
+    "desc": "Una galería interactiva con IndexedDB y drag & drop.",
+    "subDesc":"En este proyecto se utilizo de react para la estructura visual, una libreria llamada Dexie.js para el manejo de indexedDB, tambien se usaron APIS de javascript vanilla como drag & drop, file reader.",
+    "link":"https://samrandals.github.io/galleryWeb/",
+    "image": "/proyects/pintaLess.jpg",
+    "technologi": ["React", "IndexedDB", "Drag&Drop","FileReader"]
+  },
+  {
+    "id": 2,
+    "title": "Gestor de Tareas",
+    "desc": "Aplicación para crear y gestionar tareas locales.",
+    "subDesc":"Caca y popo",
+    "image": "https://cdn-icons-png.flaticon.com/512/9582/9582626.png",
+    "technologi": ["React", "LocalStorage", "Hooks"]
+  },
+  {
+    "id": 3,
+    "title": "Pinterest Clone",
+    "desc": "Una galería interactiva con IndexedDB y drag & drop.",
+    "subDesc":"",
+    "image": "https://cdn-icons-png.flaticon.com/512/9582/9582626.png",
+    "technologi": ["React", "Tailwind", "IndexedDB"]
+  },
+  {
+    "id": 4,
+    "title": "Pinterest Clone",
+    "desc": "Una galería interactiva con IndexedDB y drag & drop.",
+    "subDesc":"",
+    "image": "https://cdn-icons-png.flaticon.com/512/9582/9582626.png",
+    "technologi": ["React", "Tailwind", "IndexedDB"]
+  }
+]
