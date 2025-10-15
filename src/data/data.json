@@ -5,7 +5,7 @@
     "desc": "Una galería interactiva con IndexedDB y drag & drop.",
     "subDesc":"En este proyecto se utilizo de react para la estructura visual, una libreria llamada Dexie.js para el manejo de indexedDB, tambien se usaron APIS de javascript vanilla como drag & drop, file reader.",
     "link":"https://samrandals.github.io/galleryWeb/",
-    "image": "`${import.meta.env.BASE_URL}/proyects/pintaLess.jpg`",
+    "image": "/proyects/pintaLess.jpg",
     "technologi": ["React", "IndexedDB", "Drag&Drop","FileReader"]
   },
   {
