@@ -27,7 +27,7 @@ export default function Presentation(){
     <div className="grow-1 p-5 ">
         
         <div className="rounded-full w-40 h-40 md:w-50 md:h-50 xl:w-80 xl:h-80 overflow-hidden  animate-shadow-pulse">
-            <img src="/images/me.jpg" alt="" className="w-full h-full object-cover"/>
+            <img src={`${import.meta.env.BASE_URL}/images/me.jpg`} alt="" className="w-full h-full object-cover"/>
         </div>
     </div>
 

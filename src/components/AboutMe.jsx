@@ -70,7 +70,7 @@ return(<>
             <h2 className="sec-color text-xl:">Titulos</h2>
             <div className="grid grid-cols-1 grid-rows-[300px] mt-10 m-auto">
                 <div className="p-5 w-full h-full  overflow-hidden transform hover:scale-105 transition duration-500 ease shadow-md rounded-xl ">
-                    <img src="/docs/titleView.png" alt="titulo vista" className="w-full h-full object-contain" onClick={handleDownload}/>
+                    <img src={`${import.meta.env.BASE_URL}/docs/titleView.png`} alt="titulo vista" className="w-full h-full object-contain" onClick={handleDownload}/>
                 </div>
                 
                 
