@@ -40,7 +40,7 @@ export default function Proyects() {
                   onMouseLeave={() => setHoveredId(null)}
                 >
                   <img
-                    src={`${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}`}
+                   src={`${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}`}
                     alt={project.title}
                     className="h-full w-full object-cover"
                   />
