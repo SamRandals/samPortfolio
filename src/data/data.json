@@ -12,7 +12,7 @@
     "id": 2,
     "title": "Gestor de Tareas",
     "desc": "Aplicación para crear y gestionar tareas locales.",
-    "subDesc":"Descripcion basica ",
+    "subDesc":"Caca y popo",
     "image": "https://cdn-icons-png.flaticon.com/512/9582/9582626.png",
     "technologi": ["React", "LocalStorage", "Hooks"]
   },
