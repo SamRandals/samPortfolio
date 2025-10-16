@@ -26,6 +26,7 @@ export default function Proyects() {
         {/* grid displayer */}
         <div className="grid grid-rows-[420px] auto-rows-[420px] md:grid-rows-[420px]   grid-cols-1 m-10 md:grid-cols-2 xl:grid-cols-4 gap-5 xl:m-4 p-2">
           {data.map((project) => {
+            
             const isHover =    hoveredId === project.id ? activeClass : baseClass;
 
             return (
@@ -40,7 +41,11 @@ export default function Proyects() {
                   onMouseLeave={() => setHoveredId(null)}
                 >
                   <img
-                   src={`${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}`}
+                   src={
+                          project.image.startsWith("http")
+                          ? project.image 
+                          : `${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}` 
+                     }
                     alt={project.title}
                     className="h-full w-full object-cover"
                   />
