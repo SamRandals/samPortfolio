@@ -4,16 +4,17 @@ export default function Experience(){
     return (
         <>
         {/* experience apartado */}
-            <h1  id="experience" className="text-2xl md:text-4xl xl:text-6xl text-center mb-10 sec-color">Experience</h1>
+            <h1  id="experience" className="text-2xl md:text-4xl xl:text-6xl text-center mb-10 sec-color">Experiencia</h1>
             <div  className=" flex  flex-col   h-auto w-full">
                 <h2 className="text-center text-xl md:text-2xl xl:text-4xl">Sin experiencia laboral</h2>
-                <div className="w-100 md:w-240 text-pretty m-auto">
+                <div className="w-[80dvw] md:w-[70dvw] xl:w-[60dvw] m-auto">
                <p className="sec-color text-center mt-5 p-2"> Enfocado en el desarrollo frontend</p>
-                <p className="w-fit sm:120 md:w-150 xl:w-220 text-center m-auto ">
-                Soy un estudiante y desarrollador frontend apasionado por crear interfaces modernas, dinámicas y funcionales. Aunque aún no tengo experiencia laboral formal, he desarrollado diversos proyectos personales utilizando React y TailwindCSS, lo que me ha permitido fortalecer mis habilidades en el diseño, la estructura y la interactividad de las aplicaciones web.
+                <p className="w-full ">
+                Soy un desarrollador frontend y estudiante apasionado por crear interfaces modernas, dinámicas y funcionales. Aunque aún no tengo experiencia laboral profesional, he desarrollado proyectos personales con React y Tailwind CSS, fortaleciendo mis habilidades en diseño, estructura e interactividad web.
                 </p>
-                <p className="w-fit sm:120 md:w-150 xl:w-220 text-center m-auto ">Mi principal enfoque está en ofrecer experiencias de usuario fluidas y atractivas, aplicando buenas prácticas de código y diseño responsivo.</p>
-                <p className="w-fit sm:120 md:w-150 xl:w-220 text-center m-auto " >Además, cuento con conocimientos básicos en backend con PHP y SQL, lo que me permite comprender cómo se conectan las interfaces con la lógica del servidor y las bases de datos.</p>
+                <p className="w-full  mt-2">Mi enfoque está en ofrecer experiencias de usuario fluidas y atractivas, aplicando buenas prácticas de código y diseño responsivo.</p>
+                <p className="w-full  " >Además, poseo conocimientos básicos en backend con PHP y SQL, lo que me permite comprender la integración entre frontend y servidor.</p>
+                <p className="w-full ">Actualmente busco mi primera oportunidad profesional donde pueda aportar valor, aprender de un equipo y seguir creciendo como desarrollador.</p>
                
                 </div>
 
