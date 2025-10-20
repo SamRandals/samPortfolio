@@ -3,18 +3,27 @@
 
 export default function Presentation(){
 
+const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = `${import.meta.env.BASE_URL}hoja_de_vida_samuel_nanez.pdf`; 
+  link.download = "Hoja_de_Vida_Samuel_Nanez_Rodriguez.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
-   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/hoja_de_vida.pdf"; 
-    link.download = "hoja_de_vida.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+const handleCVDownload = () => {
+  const link = document.createElement("a");
+  link.href = `${import.meta.env.BASE_URL}samuel_nanez_rodriguez_cv.pdf`; 
+  link.download = "Samuel_Nanez_Rodriguez_CV.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
     return(<>
     
-    <div id="presentation" className=" flex items-center justify-center container h-dvh p-5 ">
+    <div id="presentation" className=" flex w-full items-center justify-center  h-dvh p-5 ">
 {/* text container presentation */}
         <div className="grow-1 p-5">
 
@@ -32,8 +41,18 @@ export default function Presentation(){
     </div>
 
     </div>
-        <div className="flex flex-col m-auto p-5 animate-shadow-pulse rounded-2xl mb-20 transform hover:scale-105 transition duration-500 ease-in-out">
+       
+       {/* downlaoders flexs */}
+       <div className="flex m-auto gap-2 w-[20dvw] md:w-[50dvw] xl:w-[60dvw]">
+         <div className="flex  m-auto p-5 animate-shadow-pulse rounded-2xl mb-20 transform hover:scale-105 transition duration-500 ease-in-out ">
             <button onClick={handleDownload} className="w-full h-full ">Descargar Hoja de vida</button>
+             
         </div>
+           <div className="flex  m-auto p-5 animate-shadow-pulse rounded-2xl mb-20 transform hover:scale-105 transition duration-500 ease-in-out ">
+           <button onClick={handleCVDownload} className="w-full h-full">Descargar Hoja de vida</button>
+
+            </div>
+       </div>
+        
     </>)
 }
