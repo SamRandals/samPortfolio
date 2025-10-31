@@ -49,7 +49,7 @@ const handleCVDownload = () => {
              
         </div>
            <div className="flex  m-auto p-5 animate-shadow-pulse rounded-2xl mb-20 transform hover:scale-105 transition duration-500 ease-in-out ">
-           <button onClick={handleCVDownload} className="w-full h-full">Descargar Hoja de vida</button>
+           <button onClick={handleCVDownload} className="w-full h-full">Descargar CV</button>
 
             </div>
        </div>
