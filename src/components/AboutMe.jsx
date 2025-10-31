@@ -65,6 +65,10 @@ return(<>
                     Actualmente vivo en la ciudad de Cali, Colombia
                 </details>
                 <details>
+                    <summary className="sec-color">Cuando inicie etapa practica?</summary>
+                    Inicie en febrero del 2025.
+                </details>
+                <details>
                     <summary className="sec-color">Cuantos años tengo?</summary>
                     Tengo 19 años de edad
                 </details>
