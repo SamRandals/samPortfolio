@@ -22,15 +22,17 @@
     "title": "Pinterest Clone",
     "desc": "Una galería interactiva con IndexedDB y drag & drop.",
     "subDesc":"",
+    "link":"https://samrandals.github.io/galleryWeb/",
     "image": "https://cdn-icons-png.flaticon.com/512/9582/9582626.png",
     "technologi": ["React", "Tailwind", "IndexedDB"]
   },
   {
     "id": 4,
     "title": "Pinterest Clone",
-    "desc": "Una galería interactiva con IndexedDB y drag & drop.",
-    "subDesc":"",
+    "desc": "Pagina de chats para compartir con amigos.",
+    "subDesc":"Este es un diseño de pagina web para chats, solo es lo visual, no tiene funcionalidades, esto con el fin de usar mis conocimientos en fronteEnd en un proyecto de diseño",
+    "link":"https://samrandals.github.io/whatsappClon.github.io/",
     "image": "https://cdn-icons-png.flaticon.com/512/9582/9582626.png",
-    "technologi": ["React", "Tailwind", "IndexedDB"]
+    "technologi": ["Html", "Css", "Javascript" ]
   }
 ]
