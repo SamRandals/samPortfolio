@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 
 export default function Header(){
  const handleScroll = (id) => {
@@ -7,28 +7,55 @@ export default function Header(){
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-    return(<>
-      <header className='flex items-center justify-between w-full  shadow-color h-15 fixed top-0 z-50 backdrop-blur-2xl'>
-      <p className=' logo text-3xl p-2 ml-4 main-text animate-pulse '>Portfolio Samuel</p>
 
-      <ul className='flex mr-20 gap-10 main-text h-full'>
-        <li className='h-full'>
-          <button className='h-full hover:border-b hover:text-xl transition-all duration-300 ease-in ' onClick={()=>handleScroll("presentation")}>Home</button>
-        </li>
-        <li>
-          <button className='h-full hover:border-b hover:text-xl transition-all duration-300 ease-in  ' onClick={()=>handleScroll("experience")}>Experience</button>
-        </li>
-        <li>
-          <button className='h-full hover:border-b hover:text-xl transition-all duration-300 ease-in  ' onClick={()=>handleScroll("aboutMe")}>About me</button>
-        </li>
-        <li>
-          <button className='h-full hover:border-b hover:text-xl transition-all duration-300 ease-in  ' onClick={()=>handleScroll("proyects")}>Proyects</button>
-        </li>
-        <li>
-          <button className='h-full hover:border-b hover:text-xl transition-all duration-300 ease-in  ' onClick={()=>handleScroll("info")}>Contacts</button>
-        </li> 
-      </ul>
+  const [open, isOpen]= useState("hidden");
 
-    </header>
-    </>)
+  function OpenOptions(){
+    if(open==="hidden")isOpen("flex")
+      else isOpen("hidden");
+  }
+    return(
+      <>
+        <header className="flex w-full h-15 top-0 fixed justify-between items-center main-text shadow-md px-5 z-10">
+          <h2 className="text-main text-2xl ml-5">Portafolio de Samuel</h2>
+
+          <button onClick={OpenOptions} className="p-2 text-4xl md:hidden">=</button>
+          {/* nav buttons */}
+
+          {/* Pc nav bar */}
+          <nav className=" hidden md:flex items-center gap-5">
+            <button className="pb-1 border-b-2 border-b-transparent hover:border-b-current transition-colors duration-300" onClick={()=>handleScroll("experience")}>
+              Experiencia
+            </button>
+             <button className="pb-1 border-b-2 border-b-transparent hover:border-b-current transition-colors duration-300" onClick={()=>handleScroll("aboutMe")}>
+              Sobre mi
+            </button>
+             <button className="pb-1 border-b-2 border-b-transparent hover:border-b-current transition-colors duration-300" onClick={()=>handleScroll("proyects")}>
+              Proyectos
+            </button>
+             <button className="pb-1 border-b-2 border-b-transparent hover:border-b-current transition-colors duration-300" onClick={()=>handleScroll("info")}>
+              Contactos
+            </button>
+          </nav>
+
+          {/* android uses */}
+
+           
+        </header>
+         <nav className={` ${open} sm:hidden main-text flex-col fixed top-15 left-0 w-full h-full overflow-hidden z-[5] py-5 bg-color items-center gap-5`}>
+            <button className=" border-1 px-10 py-2 rounded-xl transition-all hover:scale-125  ease  hover:border-2  duration-300" onClick={()=>handleScroll("experience")}>
+              Contactos
+            </button>
+              <button className=" border-1 px-10 py-2 rounded-xl transition-all hover:scale-125  ease  hover:border-2  duration-300" onClick={()=>handleScroll("aboutMe")}>
+              Sobre mi
+            </button>
+             <button className=" border-1 px-10 py-2 rounded-xl transition-all hover:scale-125  ease  hover:border-2  duration-300" onClick={()=>handleScroll("proyects")}>
+              Proyectos
+            </button>
+             <button className=" border-1 px-10 py-2 rounded-xl transition-all hover:scale-125  ease  hover:border-2  duration-300" onClick={()=>handleScroll("info")}>
+              Contactos
+            </button>
+          </nav>
+      </>
+    )
 }

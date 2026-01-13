@@ -14,12 +14,12 @@ export default function Proyects() {
 
   return (
     <>
-      <h2 className="text-center text-2xl xl:text-5xl" id="proyects">Proyectos</h2>
+      <h2 className="text-center text-2xl xl:text-5xl my-3" id="proyects">Proyectos</h2>
       <h3 className="text-center text-xl xl:text-3xl sec-color">
         Inspirados en otras apps
       </h3>
-      <h4 className="text-center text-md xl:text-sm sec-color animate-pulse overflow-hidden">
-        ¡También hay proyectos originales!
+      <h4 className="text-center my-3 text-md xl:text-sm sec-color animate-pulse overflow-hidden">
+        Proyectos FrontEnd
       </h4>
 
       <section  className="h-auto xl:h-dvh">

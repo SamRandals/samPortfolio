@@ -10,11 +10,12 @@
   },
   {
     "id": 2,
-    "title": "Gestor de Tareas",
-    "desc": "Aplicación para crear y gestionar tareas locales.",
-    "subDesc":"Aun sin contenido",
-    "image": "https://cdn-icons-png.flaticon.com/512/9582/9582626.png",
-    "technologi": ["React", "LocalStorage", "Hooks"]
+    "title": "Clinica de gatos",
+    "desc": "Aplicacion web para administrar gatos de forma profesional via veterinarios",
+    "subDesc":"Este proyecto trata sobre una clinica de gatos, permitiendo el registro del estado de su animal, raza y edad con el fin de llevar un seguimiento controlado y seguro mientras curamos y hacemos sentir mejor a tu gatito! Desarrollado con Hmtl, Css, Javascript y React",
+    "image": "/proyects/clinicaLogoCats.jpg",
+    "link":"https://samrandals.github.io/ClinicaDeGatos/",
+    "technologi": ["React","TailwindCSS", "LocalStorage", "Hooks"]
     
   },
   {
@@ -32,7 +33,7 @@
     "desc": "Pagina de chats para compartir con amigos.",
     "subDesc":"Este es un diseño de pagina web para chats, solo es lo visual, no tiene funcionalidades, esto con el fin de usar mis conocimientos en fronteEnd en un proyecto de diseño",
     "link":"https://samrandals.github.io/whatsappClon.github.io/",
-    "image": "https://cdn-icons-png.flaticon.com/512/9582/9582626.png",
+    "image": "/proyects/chatlogo.jpg",
     "technologi": ["Html", "Css", "Javascript" ]
   }
 ]
